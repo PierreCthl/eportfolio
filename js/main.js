@@ -52,6 +52,10 @@
     $("#heroIntro").textContent = T(h.intro);
     $("#portraitCap").textContent = T(h.portraitCaption);
     var img = $("#profileImg"); img.src = sh.profileImage; img.alt = sh.name;
+    var v = $("#heroVideo");
+    v.href = sh.videoUrl || "#";
+    v.textContent = T(L().ui.video);
+    v.hidden = !sh.videoUrl;
   }
 
   /* ---------------- projects ---------------- */
