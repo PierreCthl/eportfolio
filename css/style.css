@@ -261,3 +261,5 @@ ul,ol{list-style:none}
 @media (min-width:640px){.skillgrid{grid-template-columns:repeat(2,1fr)}}
 @media (min-width:1180px){.skillgrid{grid-template-columns:repeat(4,1fr)}}
 .proj__acts{display:flex;flex-wrap:wrap;gap:6px 28px}
+.hero__video{margin-top:28px}
+.hero__video[hidden]{display:none}
