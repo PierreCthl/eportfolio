@@ -21,6 +21,7 @@ window.SITE = {
     siteUrl: "https://your-domain.example",    // used for Open Graph tags
     heroImage: "assets/img/hero-bg.svg",
     profileImage: "assets/img/photo-identité.jpeg",     // portrait, ratio 3:4 works best
+    videoUrl: "assets/video/presentation.mp4",
 
     // One entry per project. `link` = the PDF of your work (put the PDF files in assets/pdf/).
     projects: [
@@ -89,7 +90,8 @@ window.SITE = {
       period: "Period", where: "Place", mapLabel: "Map of Europe: my school and the universities I hope to join",
       now: "Current school", wish: "Exchange wish", legendNow: "Where I study today", legendWish: "Exchange I hope for",
       downloadCv: "Download my CV", linkedin: "Connect on LinkedIn", skills: "Skills",
-      contact: "Contact", rights: "All rights reserved.", fig: "FIG."
+      contact: "Contact", rights: "All rights reserved.", fig: "FIG.",
+      video: "Watch my video"
     },
     hero: {
       kicker: "Portfolio 2026",
@@ -195,7 +197,8 @@ window.SITE = {
       period: "Période", where: "Lieu", mapLabel: "Carte de l’Europe : mon école et les universités que j’aimerais rejoindre",
       now: "École actuelle", wish: "Souhait d’échange", legendNow: "Là où j’étudie aujourd’hui", legendWish: "Échange souhaité",
       downloadCv: "Télécharger mon CV", linkedin: "Me retrouver sur LinkedIn", skills: "Compétences",
-      contact: "Contact", rights: "Tous droits réservés.", fig: "FIG."
+      contact: "Contact", rights: "Tous droits réservés.", fig: "FIG.",
+      video: "Voir ma vidéo de présentation"
     },
     hero: {
       kicker: "Portfolio 2026",
