@@ -1,0 +1,6 @@
+MISE A JOUR DU SITE
+Copiez le contenu de ce dossier PAR-DESSUS votre dossier eportfolio (acceptez le remplacement) :
+  data/content.js, js/main.js, css/style.css  -> remplacent les anciens fichiers
+  assets/img/*.svg                            -> nouveaux placeholders (photos a remplacer)
+Vos propres photos et PDF (looping.png, ressaut.jpg, restosducoeur.jpg...) ne sont pas touches.
+Si vous avez modifie content.js depuis votre derniere version envoyee, reportez vos changements.

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Dupont — Engineering eportfolio</title>
+  <meta name="description" content="Engineering student in aerospace and mobility.">
+  <meta name="theme-color" content="#0A1628">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alex Dupont — Engineering eportfolio">
+  <meta property="og:description" content="Engineering student in aerospace and mobility.">
+  <meta property="og:image" content="assets/img/hero-bg.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A1628'/%3E%3Cpath d='M4 17 L28 15 L4 13 Z M14 15 L9 5 M14 15 L9 25' stroke='%235B8DB8' fill='none' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&family=Sora:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#welcome" id="brand" aria-label="Home">Alex Dupont</a>
+    <nav class="nav__links" aria-label="Main" id="navLinks"></nav>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      </div>
+      <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="overlay">
+        <span class="burger__bars" aria-hidden="true"></span><span class="sr" data-i18n="menu">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay" hidden>
+    <nav aria-label="Mobile" id="overlayLinks"></nav>
+  </div>
+
+  <main id="main">
+    <!-- 00 WELCOME -->
+    <section class="hero dark" id="welcome" aria-labelledby="heroName">
+      <div class="hero__bg" id="heroBg"></div>
+      <div class="hero__shade"></div>
+      <svg class="hero__plane" viewBox="0 0 640 420" aria-hidden="true" id="plane">
+        <g class="draw" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path pathLength="1" d="M30 210 C110 198 420 194 575 205 C600 210 600 210 575 215 C420 226 110 222 30 210Z"/>
+          <path pathLength="1" d="M345 200 L238 52 L204 52 L270 199"/>
+          <path pathLength="1" d="M345 220 L238 368 L204 368 L270 221"/>
+          <path pathLength="1" d="M112 203 L66 132 L50 132 L82 202"/>
+          <path pathLength="1" d="M112 217 L66 288 L50 288 L82 218"/>
+          <ellipse pathLength="1" cx="262" cy="118" rx="22" ry="6"/>
+          <ellipse pathLength="1" cx="262" cy="302" rx="22" ry="6"/>
+          <path pathLength="1" class="dash" d="M10 210 H630"/>
+          <path pathLength="1" class="dim" d="M204 30 H238 M204 24 V36 M238 24 V36"/>
+          <path pathLength="1" class="dim" d="M30 392 H575 M30 386 V398 M575 386 V398"/>
+        </g>
+        <text x="30" y="414" class="mono-svg">FIG. 01 — PLANFORM</text>
+        <text x="204" y="18" class="mono-svg">B</text>
+      </svg>
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="kicker" id="heroKicker"></p>
+          <h1 id="heroName"></h1>
+          <p class="hero__title" id="heroTitle"></p>
+          <p class="hero__intro" id="heroIntro"></p>
+        </div>
+        <figure class="hero__portrait">
+          <div class="frame"><img id="profileImg" alt="" width="900" height="1200"></div>
+          <figcaption class="mono" id="portraitCap"></figcaption>
+        </figure>
+      </div>
+      <a class="scrollcue" href="#projects"><span class="mono" data-i18n="scroll">Scroll</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <!-- 01 PROJECTS -->
+    <section class="sec light" id="projects" aria-labelledby="projectsTitle">
+      <div class="wrap"><div class="shead" id="projectsHead"></div><div id="projectsList"></div></div>
+    </section>
+
+    <!-- 02 CIVIC -->
+    <section class="sec dark" id="civic" aria-labelledby="civicTitle">
+      <div class="wrap"><div class="shead" id="civicHead"></div><div id="civicList" class="civic"></div></div>
+    </section>
+
+    <!-- 03 MOBILITY -->
+    <section class="sec deep" id="mobility" aria-labelledby="mobilityTitle">
+      <div class="wrap"><div class="shead" id="mobilityHead"></div>
+        <div class="mob">
+          <div class="map" id="map"></div>
+          <article class="mob__panel" id="mobPanel" aria-live="polite"></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 CAREERS -->
+    <section class="sec light" id="careers" aria-labelledby="careersTitle">
+      <div class="wrap"><div class="shead" id="careersHead"></div><div id="careersBody"></div></div>
+    </section>
+
+    <!-- 05 SPORTS -->
+    <section class="sec dark" id="sports" aria-labelledby="sportsTitle">
+      <div class="wrap"><div class="shead" id="sportsHead"></div><div id="sportsList" class="mosaic"></div></div>
+    </section>
+  </main>
+
+  <footer class="foot" id="footer"></footer>
+
+  <dialog class="modal" id="modal" aria-labelledby="modalTitle"></dialog>
+  <noscript><p style="padding:2rem;color:#fff;background:#0A1628">This site needs JavaScript to display its content.</p></noscript>
+
+  <script src="data/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
