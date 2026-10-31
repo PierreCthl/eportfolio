@@ -21,7 +21,7 @@ window.SITE = {
     siteUrl: "https://your-domain.example",    // used for Open Graph tags
     heroImage: "assets/img/hero-bg.svg",
     profileImage: "assets/img/photo-identité.jpeg",     // portrait, ratio 3:4 works best
-    videoUrl: "assets/video/presentation.mp4",
+    videoUrl: "assets/video/presentation1.mp4",
 
     // One entry per project. `link` = the PDF of your work (put the PDF files in assets/pdf/).
     projects: [
